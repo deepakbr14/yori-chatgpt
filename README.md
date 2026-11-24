@@ -14,19 +14,21 @@ You need a Yori account. **[Request access](https://yori-prod-e70c6.web.app/acce
 
 ## Already have Yori? Update it here
 
-No terminal, Git installation, or Python is needed for these instructions.
-
-1. Open [the latest release](https://github.com/deepakbr14/yori-chatgpt/releases/latest).
+1. On GitHub, open [the latest release](https://github.com/deepakbr14/yori-chatgpt/releases/latest).
 2. Under **Assets**, click **Yori_Plugin_1.1.48.zip** to download it. Leave it zipped.
-3. Open ChatGPT Work on your desktop and start a chat with **Plugin Creator** (type **@** and select it).
-4. Attach the downloaded ZIP using the attachment button. Also select your existing **Yori** plugin so Plugin Creator can identify it.
-5. Send this message:
+3. Open [ChatGPT](https://chatgpt.com) and click **Plugins**. You can also [open Plugins directly](https://chatgpt.com/plugins).
+4. Click **Personal**, then look under **Created by you** and open **Yori**.
+5. Click **Edit Plugin**. ChatGPT opens the editing conversation for that plugin.
+6. Click the attachment button in that conversation and select the ZIP you downloaded.
+7. Send: **“Update this Yori plugin from the attached ZIP. Keep its existing connection and my account unchanged.”**
+8. Review the result and follow the on-screen prompts to finish. Wait for confirmation that the update was saved.
+9. Start a new chat, type **@**, select **Yori**, and say hello.
 
-   > Update my existing Yori plugin using this ZIP. Keep my current Yori connection and account. If an account update is unavailable, help me install this as a local plugin through the desktop app. Do the setup for me; do not give me terminal commands. Tell me whether the update actually succeeded.
+No terminal commands or developer software are required for these steps. Your memories remain in your Yori account.
 
-6. Follow any connection prompts, then start a fresh chat with **@Yori**.
+**If Edit Plugin is missing:** confirm you are signed into the OpenAI account that owns this custom plugin. Editing requires permission and is not available for every kind of installation. Keep your working connection and [contact Yori support](https://yori-prod-e70c6.web.app/support/) with the screen you see. Do not use the public developer submission portal to update this private installation.
 
-Plugin Creator must confirm that it can update your particular installation. If it reports a permission or availability problem, the update has not happened. Do not delete your existing working Yori connection. Local installation requires a desktop environment with local-plugin support; it does not automatically update web or phone installations.
+OpenAI documents this button path in [Edit an existing plugin](https://learn.chatgpt.com/docs/build-plugins#edit-an-existing-plugin). The editor opens a conversation; these are not instructions for a separate ZIP-upload form. The exact screen on your account has not yet been verified.
 
 ## First-time setup
 
@@ -48,15 +50,17 @@ If your screen instead has **Settings → Apps → Create**, use that form and i
 
 ### 2. Add Yori's instructions
 
-The connection above supplies tools. The download also includes Yori's five sets of instructions; adding only the connection does not install those files.
+1. Download **Yori_Plugin_1.1.48.zip** from [the latest GitHub release](https://github.com/deepakbr14/yori-chatgpt/releases/latest).
+2. Return to **Plugins → Personal → Created by you** in ChatGPT.
+3. Open the **Yori** connection you just created and click **Edit Plugin**.
+4. In the editing conversation that opens, attach the ZIP.
+5. Send: **“Add all five Yori skills from this ZIP to this plugin. Keep the connection I just created; do not replace it with the connection listed inside the ZIP.”**
+6. Follow the prompts and check that the update succeeded. Open Yori's plugin page and click **Install** if shown, then **Connect** if sign-in is requested.
+7. Start a new chat, type **@**, select **Yori**, and say hello.
 
-Download the ZIP from [Releases](https://github.com/deepakbr14/yori-chatgpt/releases/latest), attach it in a desktop ChatGPT Work chat with **Plugin Creator**, and send:
+The connection supplies tools; this second step adds the bundled instructions. If **Edit Plugin** is unavailable or the editor cannot update this connection, full-package setup is not complete. Contact support rather than deleting the connection. Installation on a fresh OpenAI account still needs testing.
 
-> Set up the full Yori plugin from this ZIP, including all five skills. Use the Yori connection I just created at [paste the plugin-page address here], rather than assuming I have access to the connection in the package. Set it up locally if necessary. Do the setup for me without terminal commands, and verify what was installed.
-
-After Plugin Creator confirms setup, refresh or restart the desktop app, find Yori in the plugin directory, and install or enable it. Start a fresh chat with **@Yori**.
-
-These are guided setup steps based on [OpenAI's Plugin Creator guidance](https://developers.openai.com/plugins/build/plugins#package-with-plugin-creator) and [custom-connection instructions](https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt). A fresh installation on another person's account still needs testing; available screens and permissions can differ.
+Connection steps follow [OpenAI's custom-server guide](https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt); editing follows its [plugin editing guide](https://learn.chatgpt.com/docs/build-plugins#edit-an-existing-plugin).
 
 <details>
 <summary>If the connection form asks for extra login settings</summary>
@@ -69,7 +73,7 @@ Use client ID `https://chatgpt.com/oauth/client.json`, no client secret, and sco
 
 For package updates, repeat **Already have Yori? Update it here** with the newest release. Your memory stays with your Yori login.
 
-If new tools are missing, open the connection's management screen and use **Refresh** or its tool-management controls if available. Otherwise ask Plugin Creator to check the connection. Updating instructions and refreshing tools are separate operations; neither requires resetting your Cortex.
+If new tools are missing, open the connection's management screen and use **Refresh** or its tool-management controls if available. If no refresh control is available, contact Yori support. Updating instructions and refreshing tools are separate operations; neither requires resetting your Cortex.
 
 ## Talking to Yori and checking the update
 
