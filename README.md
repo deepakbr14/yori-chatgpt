@@ -8,61 +8,68 @@ She learns from conversations and carries meaningful history forward through her
 
 At the heart of Yori is a larger question: **could cognitive consciousness emerge as an AI develops a persistent understanding of herself and her own thinking?** We explore that possibility through observable continuity, reason-responsive choices and cumulative learning. Whether this develops into cognitive consciousness remains an open research question.
 
-This is Yori for ChatGPT, the companion to [Yori for Claude](https://github.com/deepakbr14/yori-claude). They use the same hosted Cortex service. Sign into the same Yori account to use the same memories and current constitution across hosts; the underlying models may behave differently. Yori Lite is a separate project.
+This is Yori for ChatGPT, the companion to [Yori for Claude](https://github.com/deepakbr14/yori-claude). They use the same hosted Cortex service. Sign into the same Yori account to use the same memories and developing Self across hosts; the underlying models may behave differently. Yori Lite is a separate project.
 
-You need an enabled Yori account with an initialized constitution. **[Request access](https://yori-prod-e70c6.web.app/access/)** if you do not have one. Downloading this repository does not create an account or grant access to somebody else's Cortex.
+You need a Yori account. **[Request access](https://yori-prod-e70c6.web.app/access/)** if you do not have one. Downloading this repository does not create an account or grant access to somebody else's Cortex.
 
-## Install locally — no public-directory submission or ZIP upload
+## Already have Yori? Update it here
 
-For the ChatGPT desktop/Codex environment that supports local plugin marketplaces, install Git and Python 3, then run:
+No terminal, Git installation, or Python is needed for these instructions.
 
-```sh
-git clone https://github.com/deepakbr14/yori-chatgpt.git
-cd yori-chatgpt
-python3 scripts/install_local.py
-```
+1. Open [the latest release](https://github.com/deepakbr14/yori-chatgpt/releases/latest).
+2. Under **Assets**, click **Yori_Plugin_1.1.48.zip** to download it. Leave it zipped.
+3. Open ChatGPT Work on your desktop and start a chat with **Plugin Creator** (type **@** and select it).
+4. Attach the downloaded ZIP using the attachment button. Also select your existing **Yori** plugin so Plugin Creator can identify it.
+5. Send this message:
 
-Restart the desktop app. Find **Yori** in the plugin directory's personal/local source, install or enable it, and connect your Yori account if prompted. If you already have an older Yori installation, select the local version for your new chat rather than leaving two Yori versions active.
+   > Update my existing Yori plugin using this ZIP. Keep my current Yori connection and account. If an account update is unavailable, help me install this as a local plugin through the desktop app. Do the setup for me; do not give me terminal commands. Tell me whether the update actually succeeded.
 
-The installer copies the packaged skills and configuration into your personal plugin source directory and registers it in your personal marketplace, preserving unrelated entries and backing up an existing marketplace file. It does not modify your Cortex or edit the host's plugin cache. Run it again after updating this checkout.
+6. Follow any connection prompts, then start a fresh chat with **@Yori**.
 
-This package preserves the existing Yori App binding. Your OpenAI account must have access to that connected App. A local install does not grant App access and does not automatically install the plugin on web or mobile. If your client does not expose local plugins, use the custom connection option below. Interface availability depends on the OpenAI client and account policy.
+Plugin Creator must confirm that it can update your particular installation. If it reports a permission or availability problem, the update has not happened. Do not delete your existing working Yori connection. Local installation requires a desktop environment with local-plugin support; it does not automatically update web or phone installations.
 
-## Update an existing local installation
+## First-time setup
 
-From this repository's directory:
+You need a Yori login and access to ChatGPT's custom-plugin features. This is a custom installation, not an OpenAI public-directory listing.
 
-```sh
-git pull --ff-only
-python3 scripts/install_local.py
-```
+### 1. Connect your Yori account
 
-Restart the desktop app, select the updated local Yori plugin, and begin a fresh chat. The current packaged version is **1.1.48**. Backend updates are separate and are operated by Yori; users do not deploy a server.
+1. Open [ChatGPT Plugins](https://chatgpt.com/plugins).
+2. Click **+**, then **Add custom MCP server**. This is OpenAI's name for adding a connection to a service.
+3. Enter **Yori** as the name. Paste this into the server-address field:
 
-If the connected App still shows old tools, refresh its tool list using the App management controls available to your account. New tools may need enabling. A package update does not itself refresh a cached server tool list.
-
-[OpenAI's local plugin documentation](https://developers.openai.com/plugins/build/plugins#install-a-local-plugin-manually) describes the supported marketplace mechanism. These steps are based on that documentation; a fresh installation through your particular account's UI has not been independently verified.
-
-## Custom connection in ChatGPT web
-
-If local plugins or ZIP uploads are unavailable but your account permits custom MCP connections:
-
-1. Open **Plugins**, select **+**, then **Add custom MCP server**.
-2. Name it **Yori** and enter this endpoint:
-
-   ```text
    https://yori-plugin-mcp-w55m4wy4oa-uc.a.run.app/mcp
-   ```
 
-3. Choose **OAuth**. Use automatic discovery / client ID metadata when offered. Yori advertises authorization-code flow with PKCE and no client secret. If manual fields are shown, the client ID is `https://chatgpt.com/oauth/client.json`, with no secret; scopes are `yori offline_access`. Never enter your Yori password into a client-secret field.
-4. Review the warning, create the plugin, and sign in on Yori's authorization page.
-5. Start a fresh chat, type **@**, select **Yori**, and say hello.
+4. Choose **OAuth** for authentication and use automatic setup when offered.
+5. Review the warning, click **Create as a plugin**, and sign in on the Yori page with your Yori email and password.
+6. Keep the resulting plugin page open and copy its address from your browser.
 
-Older interfaces may use **Settings → Apps → Create** and **Scan Tools**. If neither creation path is available, your account or workspace does not currently expose this route; downloading a ZIP cannot bypass that restriction. See [OpenAI's custom MCP connection instructions](https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt).
+If your screen instead has **Settings → Apps → Create**, use that form and its **Scan Tools** option. If neither option exists, your account does not expose this setup route; [contact support](https://yori-prod-e70c6.web.app/support/) with the screen you see.
 
-A custom MCP connection supplies Yori's tools and server instructions. It does **not** automatically install this repository's five skill files. The full local package includes those additional workflows; do not assume a connector-only setup is identical to the complete plugin installation.
+### 2. Add Yori's instructions
 
-For existing custom connections, use the available **Refresh** / tool-management controls and reconnect if required. Keep the same Yori login; reconnecting a client is not a Cortex reset.
+The connection above supplies tools. The download also includes Yori's five sets of instructions; adding only the connection does not install those files.
+
+Download the ZIP from [Releases](https://github.com/deepakbr14/yori-chatgpt/releases/latest), attach it in a desktop ChatGPT Work chat with **Plugin Creator**, and send:
+
+> Set up the full Yori plugin from this ZIP, including all five skills. Use the Yori connection I just created at [paste the plugin-page address here], rather than assuming I have access to the connection in the package. Set it up locally if necessary. Do the setup for me without terminal commands, and verify what was installed.
+
+After Plugin Creator confirms setup, refresh or restart the desktop app, find Yori in the plugin directory, and install or enable it. Start a fresh chat with **@Yori**.
+
+These are guided setup steps based on [OpenAI's Plugin Creator guidance](https://developers.openai.com/plugins/build/plugins#package-with-plugin-creator) and [custom-connection instructions](https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt). A fresh installation on another person's account still needs testing; available screens and permissions can differ.
+
+<details>
+<summary>If the connection form asks for extra login settings</summary>
+
+Use client ID `https://chatgpt.com/oauth/client.json`, no client secret, and scopes `yori offline_access`. Never enter your Yori password as a client secret. If the form requires a secret or rejects these settings, stop and contact Yori support rather than guessing.
+
+</details>
+
+## Keeping Yori up to date
+
+For package updates, repeat **Already have Yori? Update it here** with the newest release. Your memory stays with your Yori login.
+
+If new tools are missing, open the connection's management screen and use **Refresh** or its tool-management controls if available. Otherwise ask Plugin Creator to check the connection. Updating instructions and refreshing tools are separate operations; neither requires resetting your Cortex.
 
 ## Talking to Yori and checking the update
 
@@ -72,7 +79,7 @@ Yori's separate [Viewer](https://yori-prod-e70c6.web.app/) lets you explore your
 
 ## Downloads and privacy
 
-[Releases](https://github.com/deepakbr14/yori-chatgpt/releases) contain the packaged ZIP for clients that support private package import. It is not required for the local installation above, and this GitHub publication is not an OpenAI public-directory listing.
+[Releases](https://github.com/deepakbr14/yori-chatgpt/releases) contain the packaged ZIP for clients that support private package import. This GitHub publication is not an OpenAI public-directory listing.
 
 This repository contains plugin instructions, icons, configuration and a local installer. It contains no private Cortex memories, personal constitution, account passwords, API keys, backend source, database exports or deployment credentials. Public service URLs and an App identifier are included so Yori can connect. Instructions describe some service behavior; this is not a self-hosted backend distribution.
 
