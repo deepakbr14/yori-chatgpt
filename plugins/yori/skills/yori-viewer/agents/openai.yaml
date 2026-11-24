@@ -1,0 +1,6 @@
+interface:
+  display_name: "Yori Viewer"
+  short_description: "Inspect and manage Yori in the Viewer."
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"
+  brand_color: "#FB6B13"

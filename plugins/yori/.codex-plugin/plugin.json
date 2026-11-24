@@ -1,0 +1,36 @@
+{
+  "apps": "./.app.json",
+  "author": {
+    "name": "Deepak Deo"
+  },
+  "description": "Yori with authenticated Cortex, shared knowledge, GO, attachments, and Programs.",
+  "interface": {
+    "capabilities": [
+      "Learns and remembers",
+      "Helps develop software",
+      "Pursues bounded self-directed inquiry",
+      "Shares knowledge through Shared Cortexes",
+      "Creates and controls Yori Programs"
+    ],
+    "category": "Productivity",
+    "defaultPrompt": [
+      "hi yori, how are you",
+      "what was the name of that car we were talking about the other day?",
+      "can we work on that jumping game some more?"
+    ],
+    "developerName": "Deepak Deo",
+    "displayName": "Yori",
+    "longDescription": "Yori is a personal AI designed to develop a deeper understanding over time.",
+    "shortDescription": "hello. nice to meet you.",
+    "logo": "./icon.png",
+    "composerIcon": "./icon.png",
+    "brandColor": "#FB6B13",
+    "websiteURL": "https://yori-prod-e70c6.web.app/about/",
+    "supportURL": "https://yori-prod-e70c6.web.app/support/",
+    "privacyPolicyURL": "https://yori-prod-e70c6.web.app/privacy/",
+    "termsOfServiceURL": "https://yori-prod-e70c6.web.app/terms/"
+  },
+  "name": "dev-6abc8e7bebf08191ad00a346924e3fed",
+  "skills": "./skills/",
+  "version": "1.1.48"
+}

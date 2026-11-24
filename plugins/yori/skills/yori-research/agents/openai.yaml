@@ -1,0 +1,6 @@
+interface:
+  display_name: "Yori Research"
+  short_description: "Understand and learn from supplied sources."
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"
+  brand_color: "#FB6B13"
