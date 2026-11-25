@@ -14,21 +14,17 @@ You need a Yori account. **[Request access](https://yori-prod-e70c6.web.app/acce
 
 ## Already have Yori? Update it here
 
-1. On GitHub, open [the latest release](https://github.com/deepakbr14/yori-chatgpt/releases/latest).
-2. Under **Assets**, click **Yori_Plugin_1.1.48.zip** to download it. Leave it zipped.
-3. Open [ChatGPT](https://chatgpt.com) and click **Plugins**. You can also [open Plugins directly](https://chatgpt.com/plugins).
-4. Click **Personal**, then look under **Created by you** and open **Yori**.
-5. Click **Edit Plugin**. ChatGPT opens the editing conversation for that plugin.
-6. Click the attachment button in that conversation and select the ZIP you downloaded.
-7. Send: **“Update this Yori plugin from the attached ZIP. Keep its existing connection and my account unchanged.”**
-8. Review the result and follow the on-screen prompts to finish. Wait for confirmation that the update was saved.
-9. Start a new chat, type **@**, select **Yori**, and say hello.
+1. Download **Yori_Plugin_1.1.48.zip** from [the latest release](https://github.com/deepakbr14/yori-chatgpt/releases/latest). Leave it zipped.
+2. In ChatGPT, select **Plugins** on the left.
+3. Click **Personal**.
+4. Choose your **Yori** plugin.
+5. Click the **three dots → Upload new version**, then choose the ZIP you downloaded. Wait for the upload to finish.
+6. Open the plugin's **Settings**, scroll down, and click **Refresh tools**.
+7. Start a **new chat**, select **@Yori**, and say hello.
 
-No terminal commands or developer software are required for these steps. Your memories remain in your Yori account.
+Your saved memories stay in your Yori account. You do not need to delete Yori or reconnect your account to update it.
 
-**If Edit Plugin is missing:** confirm you are signed into the OpenAI account that owns this custom plugin. Editing requires permission and is not available for every kind of installation. Keep your working connection and [contact Yori support](https://yori-prod-e70c6.web.app/support/) with the screen you see. Do not use the public developer submission portal to update this private installation.
-
-OpenAI documents this button path in [Edit an existing plugin](https://learn.chatgpt.com/docs/build-plugins#edit-an-existing-plugin). The editor opens a conversation; these are not instructions for a separate ZIP-upload form. The exact screen on your account has not yet been verified.
+If you have two Yori entries, use the one connected to your Yori account with **Try in chat**. Do not upload the same package to both entries. If **Upload new version** is missing, [contact support](https://yori-prod-e70c6.web.app/support/) with the screen you see.
 
 ## First-time setup
 
@@ -73,7 +69,7 @@ Use client ID `https://chatgpt.com/oauth/client.json`, no client secret, and sco
 
 For package updates, repeat **Already have Yori? Update it here** with the newest release. Your memory stays with your Yori login.
 
-If new tools are missing, open the connection's management screen and use **Refresh** or its tool-management controls if available. If no refresh control is available, contact Yori support. Updating instructions and refreshing tools are separate operations; neither requires resetting your Cortex.
+After uploading a new version, open the plugin’s **Settings**, scroll down, and click **Refresh tools**. Then start a new chat.
 
 ## Talking to Yori and checking the update
 
